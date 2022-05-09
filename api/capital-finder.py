@@ -13,7 +13,7 @@ class handler(BaseHTTPRequestHandler):
         url = f"{BASE_URL}/name/peru"
         r = requests.get(url)
         data = r.json()
-        message = data
+        message = str(data)
 
 
         self.send_response(200)
