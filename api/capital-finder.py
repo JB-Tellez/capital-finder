@@ -11,7 +11,7 @@ class handler(BaseHTTPRequestHandler):
         dic = dict(query_string_list)
 
         url = f"{BASE_URL}/name/peru"
-        r = requests.get(url + dic["word"])
+        r = requests.get(url)
         data = r.json()
         message = data
 
